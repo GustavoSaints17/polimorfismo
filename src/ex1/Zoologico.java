@@ -1,7 +1,9 @@
-class Animal {
+package ex1;
+
+class Zoologico {
     private String nome;
 
-    Animal(String nome){
+    Zoologico(String nome){
         this.nome = nome;
     }
 

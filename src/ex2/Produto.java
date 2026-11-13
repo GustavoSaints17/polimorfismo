@@ -1,18 +1,20 @@
+package ex2;
+
 class Produto {
     private String nome;
-    private double preco = 0;
+    private double preco;
 
-    Produto(String nome){
+    Produto(String nome, double preco){
         this.nome = nome;
-        this.preco = 0;
+        this.preco = preco;
     }
 
     String getNome(){
-        return this.nome;
+        return nome;
     }
 
     double getPreco(){
-        return this.preco;
+        return preco;
     }
 
     void setPreco(double preco){
@@ -24,7 +26,13 @@ class Produto {
         }
     }
 
-    void calcularFrete(){
-        return "R$ 10.00"
+    double calcularFrete(){
+        return 10.0;
     }
+
+    double calcularPrecoFinal(){
+        return getPreco() + calcularFrete();
+    }
+
+
 }

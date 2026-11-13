@@ -1,4 +1,8 @@
-public class Cachorro extends Animal {
+package ex1;
+
+import ex1.Zoologico;
+
+public class Cachorro extends Zoologico {
 
     public Cachorro(String nome){
         super(nome);
